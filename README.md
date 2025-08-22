@@ -1,14 +1,17 @@
-# Code with Vijay — static site
-This is a minimal, production-ready static site you can deploy for free with **GitHub Pages**, **Netlify**, **Vercel**, or **Cloudflare Pages**.
+# Code with Vijay — Static Site
+Multi-page static website for GitHub Pages / Cloudflare Pages / Netlify / Vercel.
 
-## Quick start (GitHub Pages)
-1. Create a repo named `codewithvijay.online` (or any name).
-2. Upload the files in this folder.
-3. Go to **Settings → Pages**, choose **Deploy from branch**, branch `main`, folder `/root`.
-4. Add the custom domain: `codewithvijay.online` (kept also in the `CNAME` file).
-5. In your domain DNS, point:
-   - `www` CNAME → `<your-username>.github.io`
-   - Apex A → GitHub Pages IPs (or use your host's recommended values).
-6. Wait a few minutes. HTTPS will auto-issue.
+## Pages
+- `/index.html` — Home
+- `/about.html` — About
+- `/contact.html` — Contact (uses Formspree by default; replace `action` with your endpoint or use `mailto:`)
 
-You can also drag-drop this folder into Netlify/Vercel dashboards.
+## Deploy (GitHub Pages)
+1. Push files to `main` branch of your repo.
+2. Settings → Pages → Build from branch (`main`, root).
+3. Custom domain: `codewithvijay.online`.
+4. Add DNS at Cloudflare as documented earlier.
+
+## Optional
+- Add redirect of `www` → root using Cloudflare Rules.
+- Replace social links in footer.

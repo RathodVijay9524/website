@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Code with Vijay — Home</title>
+  <title>Contact — Code with Vijay</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Code with Vijay — tutorials, projects, tips and resources for developers.">
@@ -14,7 +14,7 @@
   <script defer src="/assets/script.js"></script>
 
 </head>
-<body data-page="home">
+<body data-page="contact">
 
   <header class="site-header">
     <div class="container nav">
@@ -31,30 +31,29 @@
     </div>
   </header>
 
-  <main class="container hero">
-    <h1>Build. Learn. Share.</h1>
-    <p class="lead">Java • Spring Boot • DDD/TDD • DevOps</p>
-    <div class="cta">
-      <a class="button" href="/about.html">About</a>
-      <a class="button ghost" href="/contact.html">Contact</a>
-    </div>
+  <main class="container page">
+    <h1>Contact</h1>
+    <p>Have a question or collaboration idea? Reach out.</p>
+
+    <form id="contact-form" class="form" method="post" action="https://formspree.io/f/your-id">
+      <div class="grid">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+      </div>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+      <button class="button" type="submit">Send</button>
+      <p class="form-note">No backend needed. Replace the action URL with your Formspree endpoint or use a <code>mailto:</code> link.</p>
+    </form>
   </main>
-
-  <section class="container features">
-    <article class="card">
-      <h3>Hands-on Projects</h3>
-      <p>Real examples in Spring Boot, Kafka, and testing.</p>
-    </article>
-    <article class="card">
-      <h3>Cheat Sheets</h3>
-      <p>Quick references for commands, patterns, and deployment.</p>
-    </article>
-    <article class="card">
-      <h3>Videos</h3>
-      <p>Short screencasts for setup, debugging, and best practices.</p>
-    </article>
-  </section>
-
 
   <footer class="site-footer">
     <div class="container footer-inner">
